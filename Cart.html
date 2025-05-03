@@ -1,0 +1,234 @@
+ <!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+<link rel="stylesheet" type="text/css" href="text-2.css" />
+<script src="text.js"></script>
+</head>
+<body onload="cart()">
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+     <a onclick="categories()">categories</a>
+    <a onclick="Service()">Services</a>
+    <a onclick="sitemap()">sitemap</a>
+    <a onclick="contact()">Contact</a>
+        <br>
+  &nbsp;&nbsp;<i onclick="wa()" style="font-size:50px; background-color:#2be784; text-align:center;width:50px;color:white;" class="fa">&#xf232;</i>&nbsp;&nbsp;<i onclick="fb()" style="text-align:center;font-size:50px; width:50px;background-color:#468de7; color:white;" class="fa">&#xf09a;</i><br/><br/>&nbsp;&nbsp;<i onclick="yt()"style="font-size:50px; text-align:center;width:50px;background-color:white; color:red;" class="fa">&#xf16a;</i> &nbsp;&nbsp;<i onclick="inst()" style="font-size:50px; text-align:center;background-color:white; width:50px;color:#f8296c65;" class="fa">&#xf16d;</i>
+  </div>
+</div>
+<header>
+<img style="width:100%;" src="https://loveantech.wordpress.com/wp-content/uploads/2025/04/photo-output.jpg">
+<div class="nav-bar">
+    <ul>
+      <li><a onclick="openNav()">&#9776;</a></li>
+      <li><a onclick="home()"><i class="fa fa-home"></i></a></li>
+      <li><a onclick="user()"><i class="fa fa-user"></i></a></li>
+      <li><a onclick="cart()"><i class="fa fa-shopping-cart"></i></a></li>
+    </ul>
+  </div></header><br><br><br><br><br><br><br><br><br><br>
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search.." title="Type in a name">
+<h1 id="username" style="text-align: center; color: darkblue;">username</h1>
+<p id="phoneno" style="text-align: center;">+2547########</p>
+<h2>history</h2>
+<h2>cart</h2>
+<table id="td">
+<tr>
+  <th id="">PRODUCT</th>
+  <th id="">PRICE</th>
+  <th id="">QTY</th>
+</tr>
+<tr id="a"></tr>
+<tr id="b"></tr>
+<tr id="c"></tr>
+<tr id="d"></tr>
+<tr id="e"></tr>
+<tr id="f"></tr>
+<tr id="g"></tr>
+<tr id="h"></tr>
+<tr id="i"></tr>
+<tr id="j"></tr>
+<tr id="k"></tr>
+<tr id="l"></tr>
+<tr id="m"></tr>
+<tr id="n"></tr>
+<tr id="o"></tr>
+<tr id="p"></tr>
+<tr id="q"></tr>
+<tr id="r"></tr>
+<tr id="s"></tr>
+<tr id="t"></tr>
+<tr id="u"></tr>
+<tr id="v"></tr>
+<tr id="w"></tr>
+<tr id="x"></tr>
+<tr id="y"></tr>
+<tr id="z"></tr>
+<tr id="a1"></tr>
+<tr id="b1"></tr>
+<tr id="c1"></tr>
+<tr id="d1"></tr>
+<tr id="e1"></tr>
+<tr id="f1"></tr>
+<tr id="g1"></tr>
+<tr id="h1"></tr>
+<tr id="i1"></tr>
+<tr id="j1"></tr>
+<tr id="k1"></tr>
+<tr id="l1"></tr>
+<tr id="m1"></tr>
+<tr id="n1"></tr>
+<tr id="o1"></tr>
+<tr id="p1"></tr>
+<tr id="q1"></tr>
+<tr id="r1"></tr>
+<tr id="s1"></tr>
+<tr id="t1"></tr>
+<tr id="u1"></tr>
+<tr id="v1"></tr>
+<tr id="w1"></tr>
+<tr id="x1"></tr>
+</table>
+<h2></h2>
+<script type="text/javascript">
+  function cart(){
+document.getElementById("username").innerHTML = localStorage.getItem("name");
+document.getElementById("phoneno").innerHTML = localStorage.getItem("phone");
+ if (localStorage.getItem("a") == "carta"){
+   document.getElementById("a").innerHTML="<td contenteditable>"+localStorage.getItem("aa")+"</td>"+"<td contenteditable>"+localStorage.getItem("ab")+"</td>"+"<td contenteditable>"+localStorage.getItem("quantity1")+"</td>";
+ } 
+   if (localStorage.getItem("b")== "cartb"){
+   document.getElementById("b").innerHTML="<td contenteditable>"+localStorage.getItem("ba")+"</td>"+"<td contenteditable>"+localStorage.getItem("bb")+"</td>"+"<td contenteditable>"+localStorage.getItem("quantity2")+"</td>";}
+   if (localStorage.getItem("c")== "cartc"){
+   document.getElementById("c").innerHTML="<td contenteditable>"+localStorage.getItem("ca")+"</td>"+"<td contenteditable>"+localStorage.getItem("cb")+"</td>"+"<td contenteditable>"+localStorage.getItem("quantity3")+"</td>";} 
+   if (localStorage.getItem("d")== "cartd"){
+   document.getElementById("d").innerHTML="<td contenteditable>"+localStorage.getItem("da")+"</td>"+"<td contenteditable>"+localStorage.getItem("db")+"</td>"+"<td contenteditable>"+localStorage.getItem("quantity4")+"</td>";}
+   if (localStorage.getItem("e")== "carte"){
+   document.getElementById("e").innerHTML="<td contenteditable>"+localStorage.getItem("ea")+"</td>"+"<td contenteditable>"+localStorage.getItem("eb")+"</td>"+"<td contenteditable>"+localStorage.getItem("quantity5")+"</td>";}
+   if (localStorage.getItem("f")== "cartf"){
+   document.getElementById("f").innerHTML="<td contenteditable>"+localStorage.getItem("fa")+"</td>"+"<td contenteditable>"+localStorage.getItem("fb")+"</td>"+"<td contenteditable>"+localStorage.getItem("quantity6")+"</td>";}
+   if (localStorage.getItem("g")== "cartg"){
+   document.getElementById("g").innerHTML="<td contenteditable>"+localStorage.getItem("ga")+"</td>"+"<td contenteditable>"+localStorage.getItem("gb")+"</td>"+"<td contenteditable>"+localStorage.getItem("quantity7")+"</td>";}
+   if (localStorage.getItem("h")== "carth"){
+   document.getElementById("h").innerHTML="<td contenteditable>"+localStorage.getItem("ha")+"</td>"+"<td contenteditable>"+localStorage.getItem("hb")+"</td>"+"<td contenteditable>"+localStorage.getItem("quantity8")+"</td>";}
+   if (localStorage.getItem("i")== "carti"){
+   document.getElementById("i").innerHTML="<td contenteditable>"+localStorage.getItem("ia")+"</td>"+"<td contenteditable>"+localStorage.getItem("ib")+"</td>"+"<td contenteditable>"+localStorage.getItem("quantity9")+"</td>";}
+   if (localStorage.getItem("j")== "cartj"){
+   document.getElementById("j").innerHTML="<td contenteditable>"+localStorage.getItem("ja")+"</td>"+"<td contenteditable>"+localStorage.getItem("jb")+"</td>"+"<td contenteditable>"+localStorage.getItem("quantity10")+"</td>";}
+   if (localStorage.getItem("k")== "cartk"){
+   document.getElementById("k").innerHTML="<td contenteditable>"+localStorage.getItem("ka")+"</td>"+"<td contenteditable>"+localStorage.getItem("kb")+"</td>"+"<td contenteditable>"+localStorage.getItem("quantity11")+"</td>";}
+   if (localStorage.getItem("l")== "cartl"){
+   document.getElementById("l").innerHTML="<td contenteditable>"+localStorage.getItem("la")+"</td>"+"<td contenteditable>"+localStorage.getItem("lb")+"</td>"+"<td contenteditable>"+localStorage.getItem("quantity12")+"</td>";}
+   if (localStorage.getItem("m")== "cartm"){
+   document.getElementById("m").innerHTML="<td contenteditable>"+localStorage.getItem("ma")+"</td>"+"<td contenteditable>"+localStorage.getItem("mb")+"</td>"+"<td contenteditable>"+localStorage.getItem("quantity13")+"</td>";}
+   if (localStorage.getItem("n")== "cartn"){
+   document.getElementById("n").innerHTML="<td contenteditable>"+localStorage.getItem("na")+"</td>"+"<td contenteditable>"+localStorage.getItem("nb")+"</td>"+"<td contenteditable>"+localStorage.getItem("quantity14")+"</td>";}
+   if (localStorage.getItem("o")== "carto"){
+   document.getElementById("o").innerHTML="<td contenteditable>"+localStorage.getItem("oa")+"</td>"+"<td contenteditable>"+localStorage.getItem("ob")+"</td>"+"<td contenteditable>"+localStorage.getItem("quantity15")+"</td>";}
+   if (localStorage.getItem("p")== "cartp"){
+   document.getElementById("p").innerHTML="<td contenteditable>"+localStorage.getItem("pa")+"</td>"+"<td contenteditable>"+localStorage.getItem("pb")+"</td>"+"<td contenteditable>"+localStorage.getItem("quantity16")+"</td>";}
+   if (localStorage.getItem("q")== "cartq"){
+   document.getElementById("q").innerHTML="<td contenteditable>"+localStorage.getItem("qa")+"</td>"+"<td contenteditable>"+localStorage.getItem("qb")+"</td>"+"<td contenteditable>"+localStorage.getItem("quantity17")+"</td>";}
+   if (localStorage.getItem("r")== "cartr"){
+   document.getElementById("r").innerHTML="<td contenteditable>"+localStorage.getItem("ra")+"</td>"+"<td contenteditable>"+localStorage.getItem("rb")+"</td>"+"<td contenteditable>"+localStorage.getItem("quantity18")+"</td>";}
+   if (localStorage.getItem("s")== "carts"){
+   document.getElementById("s").innerHTML="<td contenteditable>"+localStorage.getItem("sa")+"</td>"+"<td contenteditable>"+localStorage.getItem("sb")+"</td>"+"<td contenteditable>"+localStorage.getItem("quantity19")+"</td>";}
+   if (localStorage.getItem("t")== "cartt"){
+   document.getElementById("t").innerHTML="<td contenteditable>"+localStorage.getItem("ta")+"</td>"+"<td contenteditable>"+localStorage.getItem("tb")+"</td>"+"<td contenteditable>"+localStorage.getItem("quantity20")+"</td>";}
+   if (localStorage.getItem("u")== "cartu"){
+   document.getElementById("u").innerHTML="<td contenteditable>"+localStorage.getItem("ua")+"</td>"+"<td contenteditable>"+localStorage.getItem("ub")+"</td>"+"<td contenteditable>"+localStorage.getItem("quantity21")+"</td>";}
+   if (localStorage.getItem("v")== "cartv"){
+   document.getElementById("v").innerHTML="<td contenteditable>"+localStorage.getItem("va")+"</td>"+"<td contenteditable>"+localStorage.getItem("vb")+"</td>"+"<td contenteditable>"+localStorage.getItem("quantity22")+"</td>";}
+   if (localStorage.getItem("w")== "cartw"){
+   document.getElementById("w").innerHTML="<td contenteditable>"+localStorage.getItem("wa")+"</td>"+"<td contenteditable>"+localStorage.getItem("wb")+"</td>"+"<td contenteditable>"+localStorage.getItem("quantity23")+"</td>";}
+   if (localStorage.getItem("x")== "cartx"){
+   document.getElementById("x").innerHTML="<td contenteditable>"+localStorage.getItem("xa")+"</td>"+"<td contenteditable>"+localStorage.getItem("xb")+"</td>"+"<td contenteditable>"+localStorage.getItem("quantity24")+"</td>";}
+   if (localStorage.getItem("y")== "carty"){
+   document.getElementById("y").innerHTML="<td contenteditable>"+localStorage.getItem("ya")+"</td>"+"<td contenteditable>"+localStorage.getItem("yb")+"</td>"+"<td contenteditable>"+localStorage.getItem("quantity25")+"</td>";}
+   if (localStorage.getItem("z")== "cartz"){
+   document.getElementById("z").innerHTML="<td contenteditable>"+localStorage.getItem("za")+"</td>"+"<td contenteditable>"+localStorage.getItem("zb")+"</td>"+"<td contenteditable>"+localStorage.getItem("quantity26")+"</td>";}
+   if (localStorage.getItem("a1")== "carta1"){
+   document.getElementById("a1").innerHTML="<td contenteditable>"+localStorage.getItem("ae")+"</td>"+"<td contenteditable>"+localStorage.getItem("af")+"</td>"+"<td contenteditable>"+localStorage.getItem("quantity27")+"</td>";}
+   if (localStorage.getItem("b1")== "cartb1"){
+   document.getElementById("b1").innerHTML="<td contenteditable>"+localStorage.getItem("be")+"</td>"+"<td contenteditable>"+localStorage.getItem("bf")+"</td>"+"<td contenteditable>"+localStorage.getItem("quantity28")+"</td>";}
+   if (localStorage.getItem("c1")== "cartc1"){
+   document.getElementById("c1").innerHTML="<td contenteditable>"+localStorage.getItem("ce")+"</td>"+"<td contenteditable>"+localStorage.getItem("cf")+"</td>"+"<td contenteditable>"+localStorage.getItem("quantity29")+"</td>";}
+   if (localStorage.getItem("d1")== "cartd1"){
+   document.getElementById("d1").innerHTML="<td contenteditable>"+localStorage.getItem("de")+"</td>"+"<td contenteditable>"+localStorage.getItem("df")+"</td>"+"<td contenteditable>"+localStorage.getItem("quantity30")+"</td>";}
+   if (localStorage.getItem("e1")== "carte1"){
+   document.getElementById("e1").innerHTML="<td contenteditable>"+localStorage.getItem("ee")+"</td>"+"<td contenteditable>"+localStorage.getItem("ef")+"</td>"+"<td contenteditable>"+localStorage.getItem("quantity31")+"</td>";}
+   if (localStorage.getItem("f1")== "cartf1"){
+   document.getElementById("f1").innerHTML="<td contenteditable>"+localStorage.getItem("fe")+"</td>"+"<td contenteditable>"+localStorage.getItem("ff")+"</td>"+"<td contenteditable>"+localStorage.getItem("quantity32")+"</td>";}
+   if (localStorage.getItem("g1")== "cartg1"){
+   document.getElementById("g1").innerHTML="<td contenteditable>"+localStorage.getItem("ge")+"</td>"+"<td contenteditable>"+localStorage.getItem("gf")+"</td>"+"<td contenteditable>"+localStorage.getItem("quantity33")+"</td>";}
+   if (localStorage.getItem("h1")== "carth1"){
+   document.getElementById("h1").innerHTML="<td contenteditable>"+localStorage.getItem("he")+"</td>"+"<td contenteditable>"+localStorage.getItem("hf")+"</td>"+"<td contenteditable>"+localStorage.getItem("quantity34")+"</td>";}
+   if (localStorage.getItem("i1")== "carti1"){
+   document.getElementById("i1").innerHTML="<td contenteditable>"+localStorage.getItem("ie")+"</td>"+"<td contenteditable>"+localStorage.getItem("if")+"</td>"+"<td contenteditable>"+localStorage.getItem("quantity35")+"</td>";}
+   if (localStorage.getItem("j1")== "cartj1"){
+   document.getElementById("j1").innerHTML="<td contenteditable>"+localStorage.getItem("je")+"</td>"+"<td contenteditable>"+localStorage.getItem("jf")+"</td>"+"<td contenteditable>"+localStorage.getItem("quantity36")+"</td>";}
+   if (localStorage.getItem("k1")== "cartk1"){
+   document.getElementById("k1").innerHTML="<td contenteditable>"+localStorage.getItem("ke")+"</td>"+"<td contenteditable>"+localStorage.getItem("kf")+"</td>"+"<td contenteditable>"+localStorage.getItem("quantity37")+"</td>";}
+   if (localStorage.getItem("l1")== "cartl1"){
+   document.getElementById("l1").innerHTML="<td contenteditable>"+localStorage.getItem("le")+"</td>"+"<td contenteditable>"+localStorage.getItem("lf")+"</td>"+"<td contenteditable>"+localStorage.getItem("quantity38")+"</td>";}
+   if (localStorage.getItem("m1")== "cartm1"){
+   document.getElementById("m1").innerHTML="<td contenteditable>"+localStorage.getItem("me")+"</td>"+"<td contenteditable>"+localStorage.getItem("mf")+"</td>"+"<td contenteditable>"+localStorage.getItem("quantity39")+"</td>";}
+   if (localStorage.getItem("n1")== "cartn1"){
+   document.getElementById("n1").innerHTML="<td contenteditable>"+localStorage.getItem("ne")+"</td>"+"<td contenteditable>"+localStorage.getItem("nf")+"</td>"+"<td contenteditable>"+localStorage.getItem("quantity40")+"</td>";}
+   if (localStorage.getItem("o1")== "carto1"){
+   document.getElementById("o1").innerHTML="<td contenteditable>"+localStorage.getItem("oe")+"</td>"+"<td contenteditable>"+localStorage.getItem("of")+"</td>"+"<td contenteditable>"+localStorage.getItem("quantity41")+"</td>";}
+   if (localStorage.getItem("p1")== "cartp1"){
+   document.getElementById("p1").innerHTML="<td contenteditable>"+localStorage.getItem("pe")+"</td>"+"<td contenteditable>"+localStorage.getItem("pf")+"</td>"+"<td contenteditable>"+localStorage.getItem("quantity42")+"</td>";}
+   if (localStorage.getItem("q1")== "cartq1"){
+   document.getElementById("q1").innerHTML="<td contenteditable>"+localStorage.getItem("qe")+"</td>"+"<td contenteditable>"+localStorage.getItem("qf")+"</td>"+"<td contenteditable>"+localStorage.getItem("quantity43")+"</td>";}
+   if (localStorage.getItem("r1")== "cartr1"){
+   document.getElementById("r1").innerHTML="<td contenteditable>"+localStorage.getItem("re")+"</td>"+"<td contenteditable>"+localStorage.getItem("rf")+"</td>"+"<td contenteditable>"+localStorage.getItem("quantity44")+"</td>";}
+   if (localStorage.getItem("s1")== "carts1"){
+   document.getElementById("s1").innerHTML="<td contenteditable>"+localStorage.getItem("se")+"</td>"+"<td contenteditable>"+localStorage.getItem("sf")+"</td>"+"<td contenteditable>"+localStorage.getItem("quantity45")+"</td>";}
+   if (localStorage.getItem("t1")== "cartt1"){
+   document.getElementById("t1").innerHTML="<td contenteditable>"+localStorage.getItem("te")+"</td>"+"<td contenteditable>"+localStorage.getItem("tf")+"</td>"+"<td contenteditable>"+localStorage.getItem("quantity46")+"</td>";}
+   if (localStorage.getItem("u1")== "cartu1"){
+   document.getElementById("u1").innerHTML="<td contenteditable>"+localStorage.getItem("ue")+"</td>"+"<td contenteditable>"+localStorage.getItem("uf")+"</td>"+"<td contenteditable>"+localStorage.getItem("quantity47")+"</td>";}
+   if (localStorage.getItem("v1")== "cartv1"){
+   document.getElementById("v1").innerHTML="<td contenteditable>"+localStorage.getItem("ve")+"</td>"+"<td contenteditable>"+localStorage.getItem("vf")+"</td>"+"<td contenteditable>"+localStorage.getItem("quantity48")+"</td>";}
+   if (localStorage.getItem("w1")== "cartw1"){
+   document.getElementById("w1").innerHTML="<td contenteditable>"+localStorage.getItem("we")+"</td>"+"<td contenteditable>"+localStorage.getItem("wf")+"</td>"+"<td contenteditable>"+localStorage.getItem("quantity49")+"</td>";}
+   if (localStorage.getItem("x1")== "cartx1"){
+   document.getElementById("x1").innerHTML="<td contenteditable>"+localStorage.getItem("xe")+"</td>"+"<td contenteditable>"+localStorage.getItem("xf")+"</td>"+"<td contenteditable>"+localStorage.getItem("quantity50")+"</td>";}
+   }
+   </script>
+<div style="height:auto; background-color: #110f0f;"><br>   <h1 style="color: #62b6b6; text-align: center;">ACCESSMATT</h1>   <a style="color:#ffffff;" href="tel:0116575820"><li><b>Tell:</b>0116575820 </li></a>   <hr >    <a style="color:#ffffff;" href="tel:0116526921"><li><b>Tell:</b>0116526921</li></a>    <hr/>       <a style="color:#ffffff;" href="mailto:accessmatte@gmail.com"><li><b>email:</b>accessmatte@gmail.com</li></a>       <hr/>     <li onclick="sitemap()" style="color:#ffffff;">Nanyuki,kenya</li>     <br>     &nbsp;&nbsp;<i onclick="wa()" style="font-size:50px; background-color:#2be784; text-align:center;width:50px;color:white;" class="fa">&#xf232;</i>&nbsp;&nbsp;<i onclick="fb()" style="text-align:center;font-size:50px; width:50px;background-color:#468de7; color:white;" class="fa">&#xf09a;</i>&nbsp;&nbsp;<i onclick="yt()"style="font-size:50px; text-align:center;width:50px;background-color:white; color:red;" class="fa">&#xf16a;</i> &nbsp;&nbsp;<i onclick="inst()" style="font-size:50px; text-align:center;background-color:white; width:50px;color:#f8296c65;" class="fa">&#xf16d;</i> <br>  <h1 style="color: #f7ec94;">INFOMATION</h1>  <a onclick="account()" style="color:#ffffff;"><b>My account</b></a>  <hr/>   <a onclick="policy()" style="color:#ffffff;"><b>privancy policy</b></a><hr/>  <a onclick="terms()" style="color:#ffffff;"><b>Terms & Conditions</b></a><hr/>   <a onclick="returns()" style="color:#ffffff;"><b>Return policy</b></a><hr/>    <a onclick="contact()" style="color:#ffffff;"><b>Contact Us</b></a> </div>
+<div style="height:auto; background-color: #000000; color:#ffffff;">Copyright 2024 © ACCESMAT Nanyuki,Kenya<br> All Rights Reserved.</div>
+<script>
+function openNav() {
+  document.getElementById("myNav").style.width = "50%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+
+</script>
+</body>
+</html> 

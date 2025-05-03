@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+<link rel="stylesheet" type="text/css" href="text-2.css"/>
+<script src="text.js"></script>
+<style type="text/css">
+*{
+box-sizing: border-box;
+}
+html, body{
+margin: 0;
+padding: 0;
+}
+.container{
+margin: 15px;
+}
+input[type="radio"]{
+display: none;
+}
+.container{
+border: 1px solid black;
+border-radius: 5px;
+}
+label{
+display: block;
+padding: 10px;
+border-bottom: 1px solid black;
+color: white;
+background: #343434;
+font-size:30px;
+z-index: 2;
+/* put it above the accordion content */}
+.accordion:last-child > label, .accordion:last-child > .accordion-content{
+border: none;
+font-size:10px;
+}
+.accordion-content{
+background: #c2d4deff;
+border-bottom: 1px solid black;
+padding: 0;
+opacity: 10;max-height: 0;
+overflow: hidden;
+z-index: -1;
+transition: 0.3s linear;
+}
+input:checked ~ .accordion-content{
+padding: 15px;
+opacity: 1;
+max-height: 500px;
+z-index: 1;
+}
+</style>
+</head>
+<body>
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+     <a onclick="categories()">categories</a>
+    <a onclick="Service()">Services</a>
+    <a onclick="sitemap()">sitemap</a>
+    <a onclick="contact()">Contact</a>
+        <br>
+  &nbsp;&nbsp;<i onclick="wa()" style="font-size:50px; background-color:#2be784; text-align:center;width:50px;color:white;" class="fa">&#xf232;</i>&nbsp;&nbsp;<i onclick="fb()" style="text-align:center;font-size:50px; width:50px;background-color:#468de7; color:white;" class="fa">&#xf09a;</i><br/><br/>&nbsp;&nbsp;<i onclick="yt()"style="font-size:50px; text-align:center;width:50px;background-color:white; color:red;" class="fa">&#xf16a;</i> &nbsp;&nbsp;<i onclick="inst()" style="font-size:50px; text-align:center;background-color:white; width:50px;color:#f8296c65;" class="fa">&#xf16d;</i>
+  </div>
+</div>
+<header>
+<img style="width:100%;" src="https://loveantech.wordpress.com/wp-content/uploads/2025/04/photo-output.jpg">
+<div class="nav-bar">
+    <ul>
+      <li><a onclick="openNav()">&#9776;</a></li>
+      <li><a onclick="home()"><i class="fa fa-home"></i></a></li>
+      <li><a onclick="user()"><i class="fa fa-user"></i></a></li>
+      <li><a onclick="cart()"><i class="fa fa-shopping-cart"></i></a></li>
+    </ul>
+  </div></header><br><br><br><br><br><br><br><br><br>
+<div class="container">
+<div class="accordion">
+<input type="radio" name="accordion" id="accordion1">
+<label for="accordion1"> » phone accesories</label>
+<div class="accordion-content">
+<a href="charger.html"><button style="width: 90%; font-size: 20px;" >chargers & adapters</button></a>
+<a href="cables.html"><button style="width: 90%; font-size: 20px;" >Cables & otgs</button></a>
+<a href="Powerbank.html"><button style="width: 90%; font-size: 20px;">powerbanks</button></a>
+<a href="Case.html"><button style="width: 90%; font-size: 20px;" >cases & protectors</button></a>
+<a href="Pods.html"><button style="width: 90%; font-size: 20px;" >pods & wireless buds</button></a>
+<a href="Smartwatch.html"><button style="width: 90%; font-size: 20px;">smart watch & bands</button></a>
+<a href="Earphones.html"><button style="width: 90%; font-size: 20px;" >earphones</button></a>
+<a href="Sdcards.html"><button style="width: 90%; font-size: 20px;" >memorycards & flash</button></a>
+<a href="batteries.html"><button style="width: 90%; font-size: 20px;" >batteries</button></a>
+</div>
+</div>
+<div class="accordion">
+<input type="radio" name="accordion" id="accordion2">
+<label for="accordion2"> »electronics</label>
+<div class="accordion-content">
+<a href="Components.html"><button style="width: 90%; font-size: 20px;">components</button></a>
+<a href="Woofer.html"><button style="width: 90%; font-size: 20px;" >woofers & amplifiers</button></a>
+<a href="Cable.html"><button style="width: 90%; font-size: 20px;" >cables</button></a>
+<a href="Tv.html"><button style="width: 90%; font-size: 20px;" >smartbox & others</button></a>
+<a href="Remote.html"><button style="width: 90%; font-size: 20px;" >remotecontrolls</button></a>
+<a href="Shaver.html"><button style="width: 90%; font-size: 20px;" >blowdry & shavers</button></a>
+<a href="Inverter.html"><button style="width: 90%; font-size: 20px;" >inverters & converters</button></a>
+<a href="Battery.html"><button style="width: 90%; font-size: 20px;" >batteries</button></a>
+<a href="Lamp.html"><button style="width: 90%; font-size: 20px;" >lamps</button></a>
+</div>
+</div>
+<div class="accordion">
+<input type="radio" name="accordion" id="accordion3">
+<label for="accordion3"> »electricals</label>
+<div class="accordion-content">
+<a href="Wire.html"><button style="width: 90%; font-size: 20px;" >wires & pipes</button></a>
+<a href="Socket.html"><button style="width: 90%; font-size: 20px;" >sockets & switches</button></a>
+<a href="Lights.html"><button style="width: 90%; font-size: 20px;" >lights</button></a>
+<a href="Cutout.html"><button style="width: 90%; font-size: 20px;" >breackers & cutouts</button></a>
+<a href="Tools.html"><button style="width: 90%; font-size: 20px;" >tools</button></a>
+<a href="Fittings.html"><button style="width: 90%; font-size: 20px;" >fittings</button></a>
+<a href="Solar.html"><button style="width: 90%; font-size: 20px;" >solar</button></a>
+</div>
+</div>
+<div class="accordion">
+<input type="radio" name="accordion" id="accordion4">
+<label for="accordion4"> »phones</label>
+<div class="accordion-content">
+<a href="IPhone.html"><button style="width: 90%; font-size: 20px;" >iphone</button></a>
+<a href="Samsung.html"><button style="width: 90%; font-size: 20px;" >samsung</button></a>
+<a href="Oppo.html"><button style="width: 90%; font-size: 20px;" >oppo</button></a>
+<a href="Techno.html"><button style="width: 90%; font-size: 20px;" >tecno</button></a>
+<a href="Itel.html"><button style="width: 90%; font-size: 20px;" >itel</button></a>
+<a href="Hmd.html"><button style="width: 90%; font-size: 20px;" >nokia</button></a>
+<a href="Redme.html"><button style="width: 90%; font-size: 20px;" >redme</button></a>
+<a href="Infinix.html"><button style="width: 90%; font-size: 20px;" >infinix</button></a>
+<a href="Realme.html"><button style="width: 90%; font-size: 20px;" >realme</button></a>
+<a href="Huawei.html"><button style="width: 90%; font-size: 20px;" >huawei</button></a>
+<a href="Vivo.html"><button style="width: 90%; font-size: 20px;" >vivo</button></a>
+<a href="Vilion.html"><button style="width: 90%; font-size: 20px;" >villaons</button></a>
+<a href="Neon.html"><button style="width: 90%; font-size: 20px;" >neon</button></a>
+</div>
+</div>
+<!--div class="accordion">
+<input type="radio" name="accordion" id="accordion5">
+<label for="accordion5"> »appliances</label>
+<div class="accordion-content">
+<a href="fridges()"><button style="width: 90%; font-size: 20px;" >fridges</button></a>
+<a href="ovens()"><button style="width: 90%; font-size: 20px;" >ovens</button></a>
+<a href="microwaves()"><button style="width: 90%; font-size: 20px;" >microwaves</button></a>
+<a href="blenders()"><button style="width: 90%; font-size: 20px;" >blender</button></a>
+<a href="mixer()"><button style="width: 90%; font-size: 20px;" >mixer</button></a>
+<a href="toaster()"><button style="width: 90%; font-size: 20px;" >toaster</button></a>
+<a href="sandwichmaker()"><button style="width: 90%; font-size: 20px;" >sandwichmaker</button></a>
+<a href="dishwasher()"><button style="width: 90%; font-size: 20px;" >dishwasher</button></a>
+<a href="meat minser()"><button style="width: 90%; font-size: 20px;" >meat minser</button></a>
+<a href="juicer()"><button style="width: 90%; font-size: 20px;" >juicer</button></a>
+<a href="freezer()"><button style="width: 90%; font-size: 20px;" >freezer</button></a>
+<a href="cooker()"><button style="width: 90%; font-size: 20px;" >cooker</button></a>
+<a href="induction cooker()"><button style="width: 90%; font-size: 20px;" >induction cooker</button></a>
+<a href="washing machine()"><button style="width: 90%; font-size: 20px;" >washing machine</button></a>
+<a href="vacuum cleaner()"><button style="width: 90%; font-size: 20px;" >vacuum cleaner</button></a>
+<a href="air conditioner()"><button style="width: 90%; font-size: 20px;" >airconditioner</button></a>
+<a href="electric jug()"><button style="width: 90%; font-size: 20px;" >electricjug</button></a>
+</div>
+</div--> 
+<div class="accordion">
+<input type="radio" name="accordion" id="accordion5">
+<label for="accordion5"> »laptops</label>
+<div class="accordion-content">
+<a href="Lenovo.html"><button style="width: 90%; font-size: 20px;" >lenovo</button></a>
+<a href="Hp.html"><button style="width: 90%; font-size: 20px;" >hp</button></a>
+<a href="Dell.html"><button style="width: 90%; font-size: 20px;" >dell</button></a>
+<a href="Macbook.html"><button style="width: 90%; font-size: 20px;" >macbook</button></a>
+<a href="Asus.html"><button style="width: 90%; font-size: 20px;" >asus</button></a>
+<a href="Otherlap.html"><button style="width: 90%; font-size: 20px;" >others</button></a>
+</div>
+</div> 
+<div class="accordion">
+<input type="radio" name="accordion" id="accordion6">
+<label for="accordion6"> »laptop accesories</label>
+<div class="accordion-content">
+<a href="Keyboard.html"><button style="width: 90%; font-size: 20px;" >keyboards</button></a>
+<a href="Mouse.html"><button style="width: 90%; font-size: 20px;" >mouse</button></a>
+<a href="Storage.html"><button style="width: 90%; font-size: 20px;" >storage</button></a>
+<a href="Caables.html"><button style="width: 90%; font-size: 20px;" >cables</button></a>
+<a href="Lapcharger.html"><button style="width: 90%; font-size: 20px;" >laptop chargers</button></a>
+<a href="Ram.html"><button style="width: 90%; font-size: 20px;" >RAM</button></a>
+<a href="otherlapaccess.html"><button style="width: 90%; font-size: 20px;" >Others</button></a>
+</div>
+</div>
+<div class="accordion">
+<input type="radio" name="accordion" id="accordion7">
+ <label for="accordion7" style="font-size:30px;">»repair sevices</label>
+ <div class="accordion-content">
+<a href="screen replacement()"><button style="width: 90%; font-size: 20px;" >screen</button></a>
+<a href="charging.html"><button style="width: 90%; font-size: 20px;" >charging system</button></a>
+<a href="batteryreplacement.html"><button style="width: 90%; font-size: 20px;" >battery replacement</button></a>
+<a href="speakerep.html"><button style="width: 90%; font-size: 20px;" >speakers</button></a>
+<a href="mouthpiece.html"><button style="width: 90%; font-size: 20px;" >mouth piece</button></a>
+<a href="motherboards.html"><button style="width: 90%; font-size: 20px;" >motherboards</button></a>
+<a href="keyboardrep.html"><button style="width: 90%; font-size: 20px;" >keyboard</button></a>
+<a href="amplifierep.html"><button style="width: 90%; font-size: 20px;" >amplifiers</button></a>
+<a href="bluetoothrep.html"><button style="width: 90%; font-size: 20px;" >bluetooth</button></a>
+<a href="lightsrep.html"><button style="width: 90%; font-size: 20px;" >lights</button></a>
+<a href="motorsrep.html"><button style="width: 90%; font-size: 20px;" >motors</button></a>
+<a href="otherrepair.html"><button style="width: 90%; font-size: 20px;" >others</button></a>
+</div>
+</div>
+</div>
+</body>
+<div style="height:auto; background-color: #110f0f;"><br>
+  <h1 style="color: #62b6b6; text-align: center;">ACCESSMATT</h1>
+  <a style="color:#ffffff;" href="tel:0116575820"><li><b>Tell:</b>0116575820 </li></a>
+  <hr >
+   <a style="color:#ffffff;" href="tel:0116526921"><li><b>Tell:</b>0116526921</li></a>
+   <hr/>
+      <a style="color:#ffffff;" href="mailto:accessmatte@gmail.com"><li><b>email:</b>accessmatte@gmail.com</li></a>
+      <hr/>
+    <li onclick="sitemap()" style="color:#ffffff;">Nanyuki,kenya</li>
+    <br>
+    &nbsp;&nbsp;<i onclick="wa()" style="font-size:50px; background-color:#2be784; text-align:center;width:50px;color:white;" class="fa">&#xf232;</i>&nbsp;&nbsp;<i onclick="fb()" style="text-align:center;font-size:50px; width:50px;background-color:#468de7; color:white;" class="fa">&#xf09a;</i>&nbsp;&nbsp;<i onclick="yt()"style="font-size:50px; text-align:center;width:50px;background-color:white; color:red;" class="fa">&#xf16a;</i> &nbsp;&nbsp;<i onclick="inst()" style="font-size:50px; text-align:center;background-color:white; width:50px;color:#f8296c65;" class="fa">&#xf16d;</i>
+<br>
+ <h1 style="color: #f7ec94;">INFOMATION</h1>
+ <a onclick="account()" style="color:#ffffff;"><b>My account</b></a>
+ <hr/>
+  <a onclick="policy()" style="color:#ffffff;"><b>privancy policy</b></a><hr/>
+ <a onclick="terms()" style="color:#ffffff;"><b>Terms & Conditions</b></a><hr/>
+  <a onclick="returns()" style="color:#ffffff;"><b>Return policy</b></a><hr/>
+   <a onclick="contact()" style="color:#ffffff;"><b>Contact Us</b></a>
+</div>
+<div style="height:auto; background-color: #000000; color:#ffffff;">Copyright 2024 © ACCESMAT Nanyuki,Kenya<br> All Rights Reserved.</div>
+<script>
+function openNav() {
+  document.getElementById("myNav").style.width = "50%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+</html>
