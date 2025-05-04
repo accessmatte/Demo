@@ -30,6 +30,9 @@ function home(){
 function Service(){
     window.location.href = "Service.html"
 }
+function user(){
+    window.location.href = "Cart.html"
+}
 function cart(){
     window.location.href = "Cart.html"
 }
